@@ -2,20 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History - CrispyAndDeal</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>🍔 CrispyAndDeal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="history.html">History</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <a href="#" id="logoutLink" onclick="handleLogout()" style="display: none;">Logout</a>
+            <a href="menu.html">Cart (<span id="cartCount">0</span>)</a>
+        </nav>
+    </header>
 
-<header>
-    <h1 class="logo">CrispyAndDeal</h1>
-</header>
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Your Order History</h2>
+        
+        <div id="historyContainer">
+            <!-- Order history will be rendered here by JavaScript -->
+        </div>
 
-<section class="center">
-    <h2>Our History</h2>
-    <p>CrispyAndDeal started in 2024 to provide delicious snacks at affordable prices.</p>
-</section>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="menu.html" class="btn">Order More Food</a>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
